@@ -12,8 +12,9 @@ export default class Search {
         `https://www.food2fork.com/api/search?key=${key}&q=${this.query}`
       );
       this.result = res.data.recipes;
-    } catch {
-      alert(error);
+    } catch (error) {
+      console.log(error);
+      // alert(error);
     }
   }
 }
